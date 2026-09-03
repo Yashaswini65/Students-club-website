@@ -1,79 +1,52 @@
+Use this corrected version. The important fix is `contacts.html` (plural), matching your actual filename.
+
+```html
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>Contact - Students Club</title>
-
-    <link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Students Club</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-<header>
-
+  <header>
     <h1>Students Club</h1>
 
     <nav>
-
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="events.html">Events</a>
-        <a href="members.html">Members</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
-
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="events.html">Events</a>
+      <a href="members.html">Members</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contacts.html">Contact</a>
     </nav>
+  </header>
 
-</header>
+  <main>
+    <section class="page">
+      <h2>Contact Us</h2>
 
-<section class="page">
+      <p>Have questions or want to join our club? Contact us using the form below.</p>
 
-    <h2>Contact Us</h2>
+      <form action="#" method="post">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Enter your name" required>
 
-    <p>
-        Have questions or want to join our club?
-        Contact us using the form below.
-    </p>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="Enter your email" required>
 
-    <form>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
 
-        <label>Name</label>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
 
-        <input type="text"
-               placeholder="Enter your name">
-
-        <label>Email</label>
-
-        <input type="email"
-               placeholder="Enter your email">
-
-        <label>Message</label>
-
-        <textarea
-            placeholder="Enter your message">
-        </textarea>
-
-        <button type="submit">
-            Send Message
-        </button>
-
-    </form>
-
-</section>
-
-<footer>
-
-    <p>© 2026 Students Club</p>
-
-</footer>
-
+  <footer>
+    <p>&copy; 2026 Students Club</p>
+  </footer>
 </body>
-
 </html>
